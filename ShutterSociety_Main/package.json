@@ -1,0 +1,27 @@
+{
+  "name": "camera-film-shop",
+  "version": "1.0.0",
+  "description": "A web application for a camera and film shop",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "build": "webpack --mode production",
+    "dev": "webpack serve --mode development --open",
+    "test": "jest"
+  },
+  "author": "Jad Aoun, Aatika Rehman",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.3",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-loader": "^9.1.3",
+    "jest": "^29.6.2",
+    "webpack": "^5.93.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.11.3"
+  },
+  "keywords": []
+}
