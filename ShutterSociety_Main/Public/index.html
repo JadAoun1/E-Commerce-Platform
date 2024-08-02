@@ -4,40 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Camera Shop Homepage</title>
-    <style>
-        /* Ensure the video covers the entire background */
-        .background-video {
-            position: fixed;
-            right: 0;
-            bottom: 0;
-            min-width: 100%;
-            min-height: 100%;
-            width: auto;
-            height: auto;
-            z-index: -1;
-        }
-
-        /* Optional styling for the content on top of the video */
-        .content {
-            position: relative;
-            z-index: 1;
-            text-align: center;
-            color: white;
-            padding: 50px;
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- for icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> <!-- Roboto font -->
 </head>
-<body>
-    <!-- Background Video -->
-    <video class="background-video" autoplay loop muted playsinline>
+<body style="margin: 0; padding: 0; width: 100%; height: 100%; font-family: 'Roboto', sans-serif;">
+
+    <!-- Background Video Section -->
+    <video style="position: fixed; right: 0; bottom: 0; min-width: 100%; min-height: 100%; width: auto; height: auto; z-index: -1;"
+           autoplay loop muted playsinline>
         <source src="CameraProductAnimation.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
 
-    <!-- Content Over the Video -->
-    <div class="content">
-        <h1>Welcome to Our Camera Shop</h1>
-        <p>Discover the best cameras and film products.</p>
+    <!-- Navbar Section -->
+    <nav style="background-color: transparent; display: flex; justify-content: space-between; align-items: center;
+                padding: 10px 20px; font-size: 16px; position: absolute; width: 100%; top: 0; left: 0; box-shadow: none;">
+        <!-- Logo Section -->
+        <div style="font-weight: medium; font-size: 24px; margin-top: 10px; transition: color 0.3s, transform 0.3s;"
+             onmouseover="this.style.color='#d3d3d3'; this.style.transform='translateY(-3px)';" 
+             onmouseout="this.style.color='black'; this.style.transform='translateY(0)';">
+            LOGO
+        </div>
+        
+        <!-- Navigation Links -->
+        <div style="display: flex; align-items: center; margin-top: 15px;">
+            <a href="#" style="color: black; text-decoration: none; margin: 0 80px; transition: color 0.3s, transform 0.3s;"
+               onmouseover="this.style.color='#d3d3d3'; this.style.transform='translateY(-3px)';"
+               onmouseout="this.style.color='black'; this.style.transform='translateY(0)';">Shop</a>
+            <a href="#" style="color: black; text-decoration: none; margin: 0 80px; transition: color 0.3s, transform 0.3s;"
+               onmouseover="this.style.color='#d3d3d3'; this.style.transform='translateY(-3px)';"
+               onmouseout="this.style.color='black'; this.style.transform='translateY(0)';">About us</a>
+            <a href="#" style="color: black; text-decoration: none; margin: 0 80px; transition: color 0.3s, transform 0.3s;"
+               onmouseover="this.style.color='#d3d3d3'; this.style.transform='translateY(-3px)';"
+               onmouseout="this.style.color='black'; this.style.transform='translateY(0)';">Compare</a>
+            <a href="#" style="color: black; text-decoration: none; margin: 0 80px; transition: color 0.3s, transform 0.3s;"
+               onmouseover="this.style.color='#d3d3d3'; this.style.transform='translateY(-3px)';"
+               onmouseout="this.style.color='black'; this.style.transform='translateY(0)';">Contact</a>
+        </div>
+        
+        <!-- Search Bar and Icons -->
+        <div style="display: flex; align-items: center;">
+            <input type="text" class="search-bar" placeholder="Search for a camera or film..."
+                   style="background-color: transparent; color: black; border: none; border-bottom: 2px solid black; padding: 5px 10px; width: 200px; outline: none;" 
+                   onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search for a camera or film...'">
+            <i class="fas fa-search icon" style="margin-left: 15px; transition: color 0.3s, transform 0.3s;"
+               onmouseover="this.style.color='#d3d3d3'; this.style.transform='scale(1.2)';"
+               onmouseout="this.style.color='black'; this.style.transform='scale(1)';"></i>
+            <i class="fas fa-shopping-cart icon" style="margin-left: 15px; transition: color 0.3s, transform 0.3s;"
+               onmouseover="this.style.color='#d3d3d3'; this.style.transform='scale(1.2)';"
+               onmouseout="this.style.color='black'; this.style.transform='scale(1)';"></i>
+            <i class="fas fa-user icon" style="margin-left: 15px; transition: color 0.3s, transform 0.3s;"
+               onmouseover="this.style.color='#d3d3d3'; this.style.transform='scale(1.2)';"
+               onmouseout="this.style.color='black'; this.style.transform='scale(1)';"></i>
+            <i class="fas fa-user-circle icon" style="margin-left: 15px; transition: color 0.3s, transform 0.3s;"
+               onmouseover="this.style.color='#d3d3d3'; this.style.transform='scale(1.2)';"
+               onmouseout="this.style.color='black'; this.style.transform='scale(1)';"></i>
+        </div>
+    </nav>
+
+    <!-- Header and Paragraph Section -->
+    <div style="position: absolute; top: 200px; left: 300px; color: black; max-width: 700px;">
+        <h1 style="font-size: 72px; font-weight: bold; margin-bottom: 50px;">Welcome To ShutterSociety</h1>
+        <p style="font-size: 24px; line-height: 1.6;">
+            Explore our exclusive range of cameras and accessories. Whether you're a professional photographer or an enthusiast, we have something for everyone. Start your photographic journey with us today!
+        </p>
     </div>
+
 </body>
 </html>
