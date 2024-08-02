@@ -4,27 +4,39 @@ Welcome to Shutter Society! An E-Commerce Platform project for managing a camera
 
 Table of Contents
 
-- [Getting Started](getting-started)
-- [Prerequisites](prerequisites)
-- [Installation](installation)
-- [Usage](usage)
-- [Environment Variables](environment-variables)
-- [Contributing](contributing)
-- [License](license)
+- Getting Started
+- Prerequisites
+- Installation
+- Usage
+- Environment Variables
+- Contributing
+- Licenselicense
+
+
+
+
+
 
 
 Getting Started
 
 These instructions will help you set up the project on your local machine for development and testing purposes.
 
+
+
+
+
 Prerequisites
 
 Make sure you have the following software installed on your system:
 
-- Node.js and npm: [Download Node.js](https://nodejs.org/)
-- Git: [Download Git](https://git-scm.com/)
+- Node.js and npm: Download Node.jshttps://nodejs.org/
+- Git: Download Githttps://git-scm.com/
 
- Installation
+
+
+
+Installation
 
 1. Clone the Repository:
 
@@ -65,8 +77,7 @@ To start the development server and view the project in your browser, use the fo
 
 npm run dev
 
-
-This will launch the application on http://localhost:3000 (or the specified port if changed in the configuration) and open your default web browser.
+This will launch the application on http://localhost:3000 or the specified port if changed in the configuration and open your default web browser.
 
 
 
