@@ -1,20 +1,26 @@
 {
-  "name": "shuttersociety_main",
+  "name": "camera-film-shop",
   "version": "1.0.0",
-  "description": "",
+  "description": "A web application for a camera and film shop",
   "main": "index.js",
-
   "scripts": {
-  "start": "node server.js"
-}
-,
-  "keywords": [],
-  "author": "",
+    "start": "node server.js",
+    "build": "webpack --mode production",
+    "dev": "webpack serve --mode development --open",
+    "test": "jest"
+  },
+  "author": "Jad Aoun, Aatika Rehman",
   "license": "ISC",
-
-  
   "dependencies": {
-    "express": "^4.19.2",
-    "three": "^0.167.1"
+    "express": "^4.18.2",
+    "axios": "^1.4.0"
+  },
+  "devDependencies": {
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.11.3",
+    "babel-loader": "^9.1.4",
+    "babel-core": "^7.0.0-bridge.0",
+    "jest": "^30.0.0"
   }
 }
