@@ -10,7 +10,7 @@ Table of Contents
 - Usage
 - Environment Variables
 - Contributing
-- Licenselicense
+- License
 
 
 
