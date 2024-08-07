@@ -8,7 +8,7 @@ module.exports = {
   },
   devServer: {
     static: path.join(__dirname, 'public'),  // Serve files from public directory
-    port: 8082,
+    port: 8083,
     open: true,
   },
   module: {
